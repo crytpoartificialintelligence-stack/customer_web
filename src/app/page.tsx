@@ -28,6 +28,7 @@ export default function LandingPage() {
         <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
           <a href="#product" className="hover:text-white transition-colors">Product</a>
           <a href="#board" className="hover:text-white transition-colors">Executive Board</a>
+          <a href="/shop" className="hover:text-white transition-colors">Shop</a>
           <a href="#contact" className="hover:text-white transition-colors">Contact</a>
         </div>
         <a href="#contact" className="bg-white text-black px-5 py-2 rounded-full text-xs font-bold hover:bg-cyan-400 transition-all">
@@ -144,36 +145,31 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Digital Shop Preview */}
+            {/* NEW: Lead Magnet (The 'Different Idea') */}
             <div className="glass p-10 rounded-[48px] border-purple-500/20 relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                <ShoppingBag className="w-32 h-32 text-purple-400" />
+                <Zap className="w-32 h-32 text-purple-400" />
               </div>
-              <span className="text-purple-400 font-bold uppercase tracking-widest text-xs mb-4 block">Instant Access Assets</span>
-              <h2 className="text-4xl font-black mb-6">The AI Shop</h2>
+              <span className="text-purple-400 font-bold uppercase tracking-widest text-xs mb-4 block">Free Resource</span>
+              <h2 className="text-4xl font-black mb-6">AI Tools Cheat Sheet</h2>
+              <p className="text-slate-400 mb-8 max-w-md">
+                Stop wasting time with generic tools. Grab our curated <strong>2026 AI Roadmap</strong> & Cheat Sheet. Used by the top 1% of our network.
+              </p>
 
               <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors cursor-pointer">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 font-bold">01</div>
-                  <div className="flex-1">
-                    <h4 className="font-bold text-sm text-white">Master AI Prompt Pack</h4>
-                    <p className="text-[10px] text-slate-400">500+ High-Conversion Prompts</p>
-                  </div>
-                  <div className="text-white font-mono font-bold">$49</div>
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <div className="p-1.5 rounded-lg bg-purple-500/20 text-purple-400"><CheckCircle className="w-4 h-4" /></div>
+                  Top 50+ AI Productivity Tools
                 </div>
-                <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors cursor-pointer opacity-60">
-                  <div className="w-10 h-10 bg-gray-500/20 rounded-xl flex items-center justify-center text-gray-400 md:ml-0 ml-0 font-bold"><Lock className="w-4 h-4" /></div>
-                  <div className="flex-1">
-                    <h4 className="font-bold text-sm text-gray-400">Agency Blueprint Course</h4>
-                    <p className="text-[10px] text-slate-500">Coming Q2 2026</p>
-                  </div>
-                  <div className="text-gray-500 font-mono font-bold">$299</div>
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <div className="p-1.5 rounded-lg bg-purple-500/20 text-purple-400"><CheckCircle className="w-4 h-4" /></div>
+                  Our Agentic Daily-Driver Stack
                 </div>
               </div>
 
-              <button className="w-full flex items-center justify-center gap-3 bg-purple-500 text-white px-8 py-4 rounded-2xl font-black uppercase text-xs hover:bg-purple-400 transition-colors">
-                <ShoppingBag className="w-4 h-4" /> Visit Store
-              </button>
+              <a href="#contact" className="w-full flex items-center justify-center gap-3 bg-purple-500 text-white px-8 py-4 rounded-2xl font-black uppercase text-xs hover:bg-purple-400 transition-colors">
+                <Download className="w-4 h-4" /> Get Free Access
+              </a>
             </div>
 
           </div>
@@ -340,6 +336,7 @@ export default function LandingPage() {
             © 2026 Automating with AI. All Rights Reserved.
           </p>
           <div className="flex gap-6 mt-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold">
+            <a href="/shop" className="hover:text-cyan-400">Shop</a>
             <a href="/privacy" className="hover:text-cyan-400">Privacy Policy</a>
             <a href="/terms" className="hover:text-cyan-400">Terms of Service</a>
           </div>
