@@ -1,20 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Syne, Lora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const syne = Syne({
+  variable: "--font-syne",
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+});
+
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Automating with AI | High-Authority Audience Amplification",
-  description: "Leverage a global network of 30,000+ AI professionals to launch your products and scale your revenue.",
+  title: "Automating with AI | AI Chatbots, Websites & Automation for Small Businesses",
+  description: "We help small businesses grow with AI chatbot setup, professional website creation, automated outreach systems, and social media automation. Done-for-you AI services starting at $300.",
 };
 
 export default function RootLayout({
@@ -25,10 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${syne.variable} ${lora.variable} ${jetbrainsMono.variable} antialiased`}
       >
         {children}
       </body>
     </html>
   );
 }
+

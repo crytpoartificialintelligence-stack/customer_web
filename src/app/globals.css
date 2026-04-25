@@ -1,43 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000212;
-  --foreground: #f9fafb;
+  --white: #ffffff;
+  --off-white: #f7f6f2;
+  --cream: #ede9e0;
+  --black: #0d0d0d;
+  --dark: #1a1a1a;
+  --mid: #4a4a4a;
+  --muted: #8a8a8a;
+  --accent: #e8480a;
+  --accent-light: #fff1ec;
+  --accent2: #0066ff;
+  --green: #00875a;
+  --border: #e2ddd5;
+  --background: var(--white);
+  --foreground: var(--dark);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lora', serif;
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Syne', sans-serif;
+  color: var(--black);
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 .glass {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #c93d07 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.hero-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150%;
-  height: 150%;
-  background: radial-gradient(circle at center, rgba(79, 172, 254, 0.1) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: -1;
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
+.tag::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
+
 .nav-blur {
-  background: rgba(0, 2, 18, 0.7);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }

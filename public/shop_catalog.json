@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": "ai_automation_prompts_pack",
+      "name": "AI Automation Prompts",
+      "type": "prompt_pack",
+      "price": 49,
+      "file_md": "shop_products\\ai_automation_prompts_pack.md",
+      "file_html": "shop_products\\ai_automation_prompts_pack.html",
+      "status": "active"
+    },
+    {
+      "id": "agentic_workflows_blueprint",
+      "name": "The Sovereign Agentic Workflows Blueprint",
+      "type": "blueprint",
+      "price": 149,
+      "file_md": "shop_products\\agentic_workflows_blueprint.md",
+      "file_html": "shop_products\\agentic_workflows_blueprint.html",
+      "status": "active"
+    }
+  ],
+  "last_updated": "2026-01-24T13:24:35.863626"
+}
