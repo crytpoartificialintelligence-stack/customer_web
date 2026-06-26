@@ -1,0 +1,14 @@
+# ROUTER.md — customer_web_backup/src/app/api
+
+This file maps the contents of this directory and links to deeper ROUTER.md files so you can drill down from the repo root.
+
+- **Parent:** [customer_web_backup/src/app/ROUTER.md](customer_web_backup/src/app/ROUTER.md)
+
+## Subdirectories
+- [contact](customer_web_backup/src/app/api/contact/ROUTER.md) — opens the subfolder's ROUTER.md
+
+## Files
+
+---
+
+To regenerate these files run: `python scripts/generate_router_docs.py` from the repository root.
